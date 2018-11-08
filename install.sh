@@ -2,7 +2,7 @@
 
 echo "\033[92m<-----Selamat Datang----->"
 echo "Tunggu Sebentar"
-for i in login log
+for i in login log git
 do
 	if [ -f $PREFIX/bin/$i ]
 	then
