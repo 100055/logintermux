@@ -1,0 +1,14 @@
+#!/bin/sh
+p=azzar
+read -p 'Masukkan Username: ' nama
+clear
+if [ $nama = $p ]
+then
+echo '[92m<-----Selamat Datang----->'
+cat /data/data/com.termux/files/usr/etc/motd
+sleep 1
+bash
+else
+echo 'Login Gagal'
+exit 1
+fi
