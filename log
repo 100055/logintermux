@@ -1,0 +1,37 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+##Import File
+. $PREFIX/bin/up
+##
+
+#CTRL-C
+trap ctrl_c INT 2
+ctrl_c(){
+echo ""
+echo "Exiting"
+sleep 2
+exit
+}
+##
+
+##Login
+echo '<----- Login ----->'
+read -p "Masukkan Username: " nama
+read -p "Masukkan Password: " p
+clear
+##
+
+##Processed
+if [ $nama = $user ] && [ $p = $pass ]
+then
+echo "[92m<----- Selamat Datang ----->"
+cat /data/data/com.termux/files/usr/etc/motd
+echo "|				   |"
+echo "|<----- Selamat Datang $nama ----->|"
+echo "|__________________________________|"
+bash
+else
+echo "Login Gagal"
+exit 1
+fi
+##

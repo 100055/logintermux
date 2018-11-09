@@ -1,0 +1,9 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo "<----- Script Untuk Ganti Username Dan Password ----->"
+sleep 1
+
+read -p "Masukkan Username Baru: " c
+read -p "Masukkan Password Baru: " b
+
+echo -e "user=$c\npass=$b">$PREFIX/bin/up

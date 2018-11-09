@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo "<----- Deleting Script Login ----->"
+sleep 1
+rm -rf $PREFIX/bin/log
+echo -e "cat $PREFIX/etc/motd\nbash">$PREFIX/bin/login
+
+echo "<----- Selesai ----->"
